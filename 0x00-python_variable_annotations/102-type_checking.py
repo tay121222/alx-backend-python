@@ -2,7 +2,9 @@
 """Type Checking"""
 from typing import List, Any
 
+
 def zoom_array(lst: List[int], factor: int = 2) -> List[int]:
+    """Annotated function zoom_array"""
     zoomed_in: List[int] = [
         item for item in lst
         for i in range(factor)
