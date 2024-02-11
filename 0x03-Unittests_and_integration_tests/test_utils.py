@@ -65,4 +65,4 @@ class TestMemoize(unittest.TestCase):
             result1 = test_instance
             result1.a_property()
             result1.a_property()
-            mock_a_method.assert_called_once()
+            mock_object.assert_called_once()
