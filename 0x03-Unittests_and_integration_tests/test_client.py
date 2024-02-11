@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """contains client.GithubOrgClient class - UnitTest"""
 import unittest
+import utils
 from unittest.mock import patch, PropertyMock
 from client import GithubOrgClient
 from parameterized import parameterized
@@ -51,5 +52,5 @@ class TestGithubOrgClient(unittest.TestCase):
         mock_get_json.assert_called_once_with(
                 "https://api.github.com/orgs/test_org/repos"
                 )
-        expected_repos = ["Django", "Luxand",]
+        expected_repos = ["Django", "Luxand", ]
         self.assertEqual(repos, expected_repos)
