@@ -18,4 +18,4 @@ class TestGithubOrgClient(unittest.TestCase):
         org_client = GithubOrgClient(org_name)
         result = org_client.org
         url = GithubOrgClient.ORG_URL.format(org=org_name)
-        mock_get_json.assert_called_once_with(url)
+        mock.assert_called_once_with(url)
